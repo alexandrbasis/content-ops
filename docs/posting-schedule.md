@@ -31,14 +31,14 @@ Optimal posting windows based on 2026 data from Buffer (8.7M tweets), Sprout Soc
 
 ## Posting Frequency
 
-| Mode | Posts/Day | When to Use |
+| Mode | Posts/Week | When to Use |
 |------|-----------|-------------|
-| Minimum (algorithmic floor) | 1 | Absolute minimum to maintain feed presence |
-| **Recommended** | **2–3** | **Optimal for quality + reach balance** |
-| Aggressive growth | 4–5 | Requires strong content supply pipeline |
-| Do not exceed | 7 | Per-post performance degrades above this |
+| Minimum (algorithmic floor) | 3–4 | Absolute minimum to maintain feed presence |
+| **ContentCreator target** | **5–7** | **~1/day with flexibility — quality over volume** |
+| Growth mode | 10–15 | Requires strong content supply pipeline |
+| Do not exceed | 21 | Per-post performance degrades above this |
 
-**ContentCreator target: 2–3 posts per weekday, hitting at least one primary slot.**
+**ContentCreator target: 5–7 posts per week (~1/day), hitting at least one primary slot per post.**
 
 ---
 
@@ -61,11 +61,30 @@ Posting at a peak time doesn't fix bad content. It amplifies good content.
 
 ---
 
+## Format Mix
+
+Target distribution per week:
+
+| Format | Share | Description |
+|--------|-------|-------------|
+| Single posts | ~60% | One standalone tweet — insight, take, or data point |
+| Threads | ~30% | 3–6 tweets — how-tos, breakdowns, case studies |
+| Longer takes | ~10% | Extended thread or detailed commentary (7+ tweets) |
+
+**Applied to a 5–7 post week:**
+- 3–4 single posts
+- 1–2 threads (3–6 tweets each)
+- 0–1 longer take (every 1–2 weeks)
+
+Use `Content Type by Slot` below to match format to time slot.
+
+---
+
 ## Scheduling via Publora
 
 ContentCreator uses the `x-post` skill (Publora MCP) for posting. The recommended workflow:
 
-1. Batch draft 6–10 posts per session
+1. Batch draft 2–3 posts per session (each session = 1–3 posts from 3–5 digest inputs)
 2. Schedule each post at a primary slot time using Publora's scheduling feature
 3. Leave 1–2 slots per week open for reactive, real-time posts on trending topics
 4. After each post, log impressions and replies in `metrics/2026-MM.md`
@@ -85,4 +104,4 @@ This schedule is a starting baseline. Once `metrics/` data accumulates (4+ weeks
 Related: [ABA-7](/ABA/issues/ABA-7) — engagement metrics tracking, [ABA-8](/ABA/issues/ABA-8)
 
 ---
-*Last Updated: 2026-04-09 | Sources: Buffer (8.7M tweets), Sprout Social (2B engagements), Statweestics, AutoTweet*
+*Last Updated: 2026-04-09 | Sources: Buffer (8.7M tweets), Sprout Social (2B engagements), Statweestics, AutoTweet | [ABA-5](/ABA/issues/ABA-5)*

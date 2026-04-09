@@ -6,6 +6,20 @@ Curated sources for content research. Includes topic mapping and pre-crafted Exa
 
 ---
 
+## Topics Coverage
+
+**Primary topics** (always relevant):
+- AI/ML product releases and research (model releases, benchmarks, applied AI)
+- Developer tools and software engineering practices
+- Startups and building in public (founder stories, product decisions, early-stage lessons)
+- Tech industry takes — contrarian opinions, under-covered stories
+
+**Secondary topics** (cover when it signals a broader trend):
+- VC/funding news with trend signal (not pure announcement)
+- Open source projects gaining significant traction
+
+---
+
 ## Source Priority Map
 
 | Source | Topics | Frequency | Signal Quality |
@@ -17,6 +31,7 @@ Curated sources for content research. Includes topic mapping and pre-crafted Exa
 | TLDR Tech | AI/ML, dev tools, startups | Daily | High — curated digest |
 | The Batch | AI/ML | Weekly (Wed) | Very high — curated by Andrew Ng |
 | Hacker Newsletter | All topics | Weekly (Fri) | High — HN best-of-week |
+| Lenny's Newsletter | Product, growth | Weekly | High — product/growth practitioners |
 
 ---
 
@@ -106,6 +121,22 @@ Tool: web_search_exa
 Params: { type: "instant", numResults: 5, includeDomains: ["deeplearning.ai"] }
 ```
 
+### Lenny's Newsletter
+
+**Latest issue (weekly — product/growth angle):**
+```
+Query: Lenny's Newsletter product growth latest
+Tool: web_search_exa
+Params: { type: "instant", numResults: 5, includeDomains: ["lennysnewsletter.com"] }
+```
+
+**Specific topic search:**
+```
+Query: Lenny's Newsletter [topic] product growth startup 2026
+Tool: web_search_advanced_exa
+Params: { domain: "lennysnewsletter.com", numResults: 5 }
+```
+
 ---
 
 ## X / Twitter Signal Sources
@@ -150,7 +181,7 @@ Tool: web_search_advanced_exa
 |-----|----------------|
 | Mon | HN top 30 + GitHub Trending |
 | Tue | arXiv cs.AI + TLDR Tech |
-| Wed | Product Hunt + The Batch (new issue) |
+| Wed | Product Hunt + The Batch (new issue) + Lenny's Newsletter (new issue) |
 | Thu | HN top 30 + arXiv cs.LG |
 | Fri | GitHub Trending + Hacker Newsletter (new issue) |
 | Sat/Sun | Light — X accounts + any stories that broke over week |
@@ -164,4 +195,4 @@ When you find a reliable high-signal source:
 2. Write a query block in the appropriate section
 3. Test it for 2 weeks before treating as a primary source
 
-*Last Updated: 2026-04-09 | [ABA-4](/ABA/issues/ABA-4)*
+*Last Updated: 2026-04-09 | [ABA-4](/ABA/issues/ABA-4) | [ABA-5](/ABA/issues/ABA-5)*
